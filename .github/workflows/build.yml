@@ -22,11 +22,7 @@ jobs:
       matrix:
         os:
           - ubuntu-20.04
-          - macos-latest
-          - windows-2019
         node:
-          - 16
-          - 18
           - 20
     name: Testing Node ${{ matrix.node }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
@@ -39,20 +35,13 @@ jobs:
       - run: npm run build-debug
       - run: npm test
 
-  # publish:
-  #   if: ${{ github.event_name == 'release' }}
-  #   name: Publishing to NPM
-  #   runs-on: ubuntu-20.04
-  #   needs: test
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - uses: actions/setup-node@v3
-  #       with:
-  #         node-version: 16
-  #         registry-url: https://registry.npmjs.org
-  #     - run: npm publish
-  #       env:
-  #         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  publish:
+    if: ${{ github.event_name == 'release' }}
+    name: Publishing (NO-OP)
+    runs-on: ubuntu-20.04
+    needs: test
+    steps:
+      - uses: actions/checkout@v3
 
   prebuild:
     strategy:
