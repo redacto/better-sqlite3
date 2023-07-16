@@ -1,9 +1,9 @@
-* @JoshuaWise
-/package.json @JoshuaWise @WiseLibs/better-sqlite3-team
-/docs/compilation.md @JoshuaWise @WiseLibs/better-sqlite3-team
-/docs/performance.md @JoshuaWise @WiseLibs/better-sqlite3-team
-/docs/troubleshooting.md @JoshuaWise @WiseLibs/better-sqlite3-team
-/deps/sqlite3/sqlite3.c @JoshuaWise @WiseLibs/better-sqlite3-team
-/deps/sqlite3/sqlite3.h @JoshuaWise @WiseLibs/better-sqlite3-team
-/deps/sqlite3/sqlite3ext.h @JoshuaWise @WiseLibs/better-sqlite3-team
-/.github/workflows/build.yml @JoshuaWise @WiseLibs/better-sqlite3-team
+* @johnpyp @redacto
+/package.json @johnpyp @redacto
+/docs/compilation.md @johnpyp @redacto
+/docs/performance.md @johnpyp @redacto
+/docs/troubleshooting.md @johnpyp @redacto
+/deps/sqlite3/sqlite3.c @johnpyp @redacto
+/deps/sqlite3/sqlite3.h @johnpyp @redacto
+/deps/sqlite3/sqlite3ext.h @johnpyp @redacto
+/.github/workflows/build.yml @johnpyp @redacto
